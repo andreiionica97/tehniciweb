@@ -1,1 +1,224 @@
-/*style*/
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-family: monospace;
+}
+.header {
+    height: 120px;
+    width: 100%;
+    background-image: url(../images/pattern.png);
+}
+.content {
+    min-height: 30px;
+    width: 100%;
+    display: inline-block;
+}
+.footer {
+    background: #083230;
+    width: 100%;
+    margin-top: 30px;
+}
+.logo {
+    width: 50%;
+    display: inline-block;
+}
+.menu {
+    width: 50%;
+    float: right;
+    text-align: right;
+    position: relative;
+}
+.logo img {
+    height: 100px;
+    width: auto;
+}
+#nav {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 120px;
+    background: #144d4b;
+    width: 172px;
+}
+div#nav ul > li {
+    padding: 5px 10px;
+    transition: all .3s ease-in-out;
+}
+div#nav ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+div#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: left;
+}
+.logo img, .toggle-menu {
+    padding: 10px 40px;
+}
+button.toggle-menu {
+    background: #0e403e;
+    border: none;
+    font-size: 42px;
+    line-height: 100px;
+    color: white;
+    font-family: monospace;
+    outline: none;
+    cursor: pointer;
+}
+div#nav ul > li.active a {
+    color: rgba(255, 255, 255, 0.6);
+}
+div#nav ul > li:hover {
+    background: #083230;
+}
+div#nav ul > li.active {
+    background: #114947;
+}
+.slider h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 42px;
+    color: white;
+}
+.slider {
+    background-image: url("../images/slider.jpg");
+    padding: 250px 0;
+    background-position: center;
+    background-size: cover;
+}
+.slider h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin: auto;
+}
+.slider h2.bigger {
+    font-size: 64px;
+    font-weight: 900;
+}
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  .footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    padding: 10px 0;
+}
+.footer p a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.footer p a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+.about-text{
+    width: 50%;
+    display: inline-block;
+}
+.about-soundcloud {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.content .title h2, .about-title h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 64px;
+    color: #fd3c05;
+}
+.page-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+.about-text span {
+    font-size: 14px;
+}
+.about-soundcloud iframe, .soundcloud-track iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+.facebook-track iframe {
+    width: 50%;
+    height: 300px;
+    border: none;
+    float: left;
+}
+.about-section {
+    text-align: center;
+    margin: 0 10px;
+}
+.about-section img {
+    max-width: 500px;
+    width: 100%;
+}
+.about-section p {
+    font-size: 18px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+.about-section .social img {
+    width: 20px;
+    vertical-align: middle;
+}
+.contact-details span {
+    font-size: 18px;
+}
+.contact-details span a {
+    color: #fd3c05;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.contact-details span a:hover {
+    color: #ca360b;
+}
+.contact-details {
+    text-align: center;
+}
+form.form-send-message input, form.form-send-message textarea {
+    width: 100%;
+    max-width: 300px
+}
+.contact-form {
+    margin: 0 10px;
+    text-align: center;
+}
+.contact-form button {
+    background: #0d3a38;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.contact-form button:hover {
+    background: #155754;
+}

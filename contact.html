@@ -1,1 +1,78 @@
-contact
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/kfavicon.png"/>
+    <title>KRiP - Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <a href="home.html"><img alt="logo" src="images/alternative-logo.png"></a>
+        </div>
+
+        <div class="menu">
+            <button class="toggle-menu" onclick="toggleMenu()">MENU</button>
+            <div id="nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="tracks.html">Tracks</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="page-content">
+            <div class="about-title">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="contact-form">
+                <h2>Leave a message!</h2>
+                <form class="form-send-message">
+                    <div class="name-input">
+                        <label for="name">Name: </label><br>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="email-input">
+                        <label for="email">Email: </label><br>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="message-input">
+                        <label for="message">Message: </label><br>
+                        <textarea id="message" name="message" rows="10" cols="120"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h2>You can find me at:</h2>
+                <span><a href="mailto:theundercultofficial@gmail.com">theundercultofficial@gmail.com</a></span>
+            </div>
+
+
+            <div class="about-section">
+                <br><br>
+                <span class="social">
+                    <a href="https://www.facebook.com/ssmatei" target="_blank"><img alt="KRiP on Facebook" src="images/fb.png"></a> | 
+                    <a href="https://soundcloud.com/krip-official" target="_blank"><img alt="KRiP on SoundCloud" src="images/sc.png"></a> | 
+                    <a href="https://www.youtube.com/channel/UClk6_SDMOp_1WltfHyvw9vA" target="_blank"><img alt="KRiP on YouTube" src="images/yt.png"></a> | 
+                    <a href="https://www.youtube.com/channel/UCg11yOaYUyVwW12HVkO7BqA" target="_blank"><img alt="The Undercult" src="images/ucult.png"></a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&#169; Andrei Ionic&#259; - <a href="mailto:andrei.ionica97@gmail.com">andrei.ionica97@gmail.com</a></p>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

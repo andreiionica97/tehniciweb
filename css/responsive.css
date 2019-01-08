@@ -1,1 +1,49 @@
-/*responsive*/
+@media(min-width: 991px) {
+    .slider h2.no-space {
+        display: none;
+    }
+}
+@media(max-width: 991px) {
+    .slider h2.bigger {
+        display: none;
+    }
+    .facebook-track iframe {
+        width: 100%;
+    }
+}
+@media(max-width: 1200px) {
+    .about-soundcloud {
+        width: auto;
+        float: none;
+        text-align: center;
+        margin: 0 10px;
+        margin-top: 15px;
+    }
+    .content .title h2 {
+        margin-top: 0;
+    }
+    .about-text {
+        width: auto;
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+@media(max-width: 500px) {
+    .facebook-track iframe {
+        height: 200px;
+    }
+}
+@media(max-width: 370px) {
+    .logo img {
+        height: 50px;
+    }
+    .header {
+        height: 70px;
+    }
+    button.toggle-menu {
+        line-height: 50px;
+    }
+    #nav {
+        top: 70px;
+    }
+}
