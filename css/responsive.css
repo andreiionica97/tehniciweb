@@ -11,6 +11,11 @@
         width: 100%;
     }
 }
+@media(min-width: 1200px) {
+    .about-content {
+        display: flex;
+    }
+}
 @media(max-width: 1200px) {
     .about-soundcloud {
         width: auto;
@@ -24,7 +29,6 @@
     }
     .about-text {
         width: auto;
-        display: inline-block;
         margin: 0 10px;
     }
 }
@@ -38,6 +42,9 @@
         height: 50px;
     }
     .header {
+        height: 70px;
+    }
+    header {
         height: 70px;
     }
     button.toggle-menu {

@@ -7,28 +7,27 @@ html,body
     overflow-x: hidden; 
     font-family: monospace;
 }
-.header {
+header {
     height: 120px;
     width: 100%;
+    display: flex;
     background-image: url(../images/pattern.png);
 }
-.content {
+section {
     min-height: 30px;
     width: 100%;
-    display: inline-block;
 }
-.footer {
+footer {
     background: #083230;
     width: 100%;
     margin-top: 30px;
 }
 .logo {
     width: 50%;
-    display: inline-block;
+    height: 120px;
 }
 .menu {
     width: 50%;
-    float: right;
     text-align: right;
     position: relative;
 }
@@ -116,33 +115,32 @@ div#nav ul > li.active {
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
-  .footer p {
+  footer p {
     margin: 0;
     text-align: center;
     font-size: 14px;
     color: white;
     padding: 10px 0;
 }
-.footer p a {
+footer p a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: all .3s ease-in-out;
 }
-.footer p a:hover {
+footer p a:hover {
     color: rgba(255, 255, 255, 0.6);
 }
-.about-text{
+.about-text {
     width: 50%;
-    display: inline-block;
+    margin: auto;
 }
 .about-soundcloud {
     width: 50%;
-    float: right;
-    text-align: right;
+    margin: 10px auto;
 }
-.content .title h2, .about-title h2 {
+section .title h2, .about-title h2 {
     text-align: center;
-    margin: 30px 0;
+    margin: 0 0 30px 0;
     font-size: 64px;
     color: #fd3c05;
 }
@@ -198,7 +196,7 @@ div#nav ul > li.active {
 .contact-details {
     text-align: center;
 }
-form.form-send-message input, form.form-send-message textarea {
+form.form-send-message input, form.form-send-message textarea, textarea#new-message, input#delete-val, input#edit-val {
     width: 100%;
     max-width: 300px
 }
@@ -206,7 +204,7 @@ form.form-send-message input, form.form-send-message textarea {
     margin: 0 10px;
     text-align: center;
 }
-.contact-form button {
+.contact-form button, section button {
     background: #0d3a38;
     border: none;
     padding: 8px 15px;
@@ -219,6 +217,6 @@ form.form-send-message input, form.form-send-message textarea {
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
-.contact-form button:hover {
+.contact-form button:hover, section button:hover {
     background: #155754;
 }
