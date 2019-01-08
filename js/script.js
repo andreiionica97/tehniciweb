@@ -89,6 +89,18 @@ var btnDelete = document.getElementById("delete");
 if(btnDelete)
   btnDelete.addEventListener("click",function(){
     var value = document.getElementById("delete-val").value;
+    var i=0;
+    var elNumber = 0;
+    var emptyString = "";
+	  for(i = 0; i < msgId.length; i++)
+			if ( msgId[i] == value){
+        elNumber = i;
+        break;
+      }
+			if(i == msgId.length + 1){
+        alert("Not a valid ID");
+				return;
+			}
     if(isNaN(value) || value < 1 || value > maxId)
       alert ("Not a valid ID");
     else {
@@ -97,7 +109,8 @@ if(btnDelete)
         var ourRequest2 = new XMLHttpRequest();
         ourRequest2.open("DELETE", 'http://localhost:3000/messages/' + value, true);
         ourRequest2.send(null);
-        //showMessages.removeChild(showMessages.childNodes[values-i]);
+        var descriptions = showMessages.getElementsByTagName('ul');
+        descriptions[elNumber].innerHTML = emptyString;
       }
     }
   });
