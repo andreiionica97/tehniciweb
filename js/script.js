@@ -71,8 +71,9 @@ function render(data){
   msgName = [];
   msgEmail = [];
   msgMessage = [];
+  nrElem = 0;
   for ( i = 0; i < data.length; i++){
-    htmlString += "<span class='toggle-results'>Message #"+ data[i].id +":<br>Name: " + data[i].name + "<br>Email: " + data[i].email +"<br>Message: "+ data[i].message + "</span><br><br>";
+    htmlString += "<ul><li class='bold'>Message #"+ data[i].id +":</li><li>Name: " + data[i].name + "</li><li>Email: " + data[i].email +"</li><li><span>Message: "+ data[i].message + "</span></li></ul>";
 	  msgId[i] = data[i].id;
     msgName[i] = data[i].name;
     msgEmail[i] = data[i].email;
@@ -96,6 +97,7 @@ if(btnDelete)
         var ourRequest2 = new XMLHttpRequest();
         ourRequest2.open("DELETE", 'http://localhost:3000/messages/' + value, true);
         ourRequest2.send(null);
+        //showMessages.removeChild(showMessages.childNodes[values-i]);
       }
     }
   });
@@ -104,6 +106,17 @@ var btnEdit = document.getElementById("edit");
 if(btnEdit)
   btnEdit.addEventListener("click",function(){
     var value = document.getElementById("edit-val").value;
+    var i=0;
+    var elNumber = 0;
+	  for(i = 0; i < msgId.length; i++)
+			if ( msgId[i] == value){
+        elNumber = i;
+        break;
+      }
+			if(i == msgId.length + 1){
+        alert("Not a valid ID");
+				return;
+			}
     if(isNaN(value) || value < 1 || value > maxId)
       alert ("Not a valid ID");
     else {
@@ -123,6 +136,8 @@ if(btnEdit)
         data.message = newMsg;
         var update = JSON.stringify(data);
         ourRequest3.send(update);
+        var descriptions = showMessages.getElementsByTagName('span');
+        descriptions[elNumber].innerHTML = newMsg;
       }
     }
   });

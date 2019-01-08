@@ -220,3 +220,19 @@ form.form-send-message input, form.form-send-message textarea, textarea#new-mess
 .contact-form button:hover, section button:hover {
     background: #155754;
 }
+section.manage-messages {
+    text-align: center;
+}
+section.manage-messages .about-title h2 {
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-size: 64px;
+    color: #093331;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.bold {
+    font-weight: 600;
+}
